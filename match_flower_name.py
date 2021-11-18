@@ -14,13 +14,13 @@ def flower(filename):
 def ask():
     Flower = flower('flowers.txt')
     name = input('enter your first [space] last name only:')
-    first_name = name[0].lower()
-    FirstLetter = first_name[0]
-    username = print('Unique flower name with the first letter:'.format(flower[FirstLetter]))
-    
+    FirstLetter = name[0].title()
+    username = print('Unique flower name with the first letter:'.format(Flower[FirstLetter]))
+
+ask()
     
 # HINT: create a function to ask for user's first and last name
-ask()
+
 
 # print the desired output
 
